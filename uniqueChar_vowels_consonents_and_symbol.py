@@ -9,8 +9,7 @@ while True:
     statement = statement.replace(' ','')
     if statement != "":
         for each_char in statement:
-            k = statement.find(each_char,statement.index(each_char)+1,len(statement))
-            if k == -1:
+            if statement.find(each_char,statement.index(each_char)+1,len(statement)) == -1:
                 temp += 1
                 if each_char in vowels:
                     print(f"\nunique character is {each_char} and is vowel\n")
