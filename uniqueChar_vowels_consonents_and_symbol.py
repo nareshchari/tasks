@@ -1,5 +1,5 @@
 vowels = "aeiou"
-# no need for cpital alpha because we are making it into lower case
+# no need for cpital alpha because we are making user input into lower case
 alnum_ = "abcdefghijklmnopqrstuvwxyz0123456789"
 temp = 0
 while True:
@@ -9,7 +9,8 @@ while True:
     statement = statement.replace(' ','')
     if statement != "":
         for each_char in statement:
-            if statement.find(each_char,statement.index(each_char)+1,len(statement)) == -1:
+            k = statement.find(each_char,statement.index(each_char)+1,len(statement))
+            if k == -1:
                 temp += 1
                 if each_char in vowels:
                     print(f"\nunique character is {each_char} and is vowel\n")
@@ -31,3 +32,4 @@ while True:
             pass
     else:
         print("\nplease enter valid input\n")
+
