@@ -34,7 +34,7 @@ print(f'\ncase2: the list contins sub lists and values \n{newlist_}')
 # exercise 3:shop
 tshirts_colour = ['white','black']
 tshirts_sizes = ['Small','Medium','Large',"XtraLarge"]
-diff_size_tshirts=[]
+diff_size_tshirts = []
 for color in tshirts_colour:
     for size in tshirts_sizes:
         # printing all available tshirst colors and its sizes
@@ -46,7 +46,7 @@ for color in tshirts_colour:
 #exercise 4:find duplicate value of index
 l = [1,2,2,2,2,3,4,5,6,7,8,9,1,45,54,54,46,58,4,5]
 # empty list to collect duplicate values
-duplicate=[]
+duplicate = []
 for i in range(len(l)):
     # taking next value of previous loop starting value
     k=i+1
